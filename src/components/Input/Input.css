@@ -1,0 +1,24 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__label {
+  margin-block: 0.5rem;
+}
+
+.input__field {
+  outline: none;
+  margin: 0;
+  border: 1px solid var(--grey-500);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background: none;
+  font: inherit;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input__field:hover,
+.input__field:focus {
+  border-color: var(--green-600);
+}

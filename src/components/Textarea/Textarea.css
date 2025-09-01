@@ -1,0 +1,32 @@
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea__label {
+  margin-block: 0.5rem;
+}
+
+.textarea__field {
+  outline: none;
+  margin: 0;
+  border: 1px solid var(--grey-500);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background: none;
+  font: inherit;
+  transition: border-color 0.2s ease-in-out;
+  resize: none;
+  height: 18rem;
+}
+
+.textarea__field:hover,
+.textarea__field:focus {
+  border-color: var(--green-600);
+}
+
+@media (min-width: 48rem) {
+  .textarea__field {
+    height: 6rem;
+  }
+}
